@@ -29,22 +29,22 @@ REGEXP_4 = '[0-9]+[0-9.]+'
 # aaa Abbb ccc ---> Abbb
 # Aaa Abbb ccc ---> Aaa, Abbb
 # Caa Cbb Accc ---> Accc
-REGEXP_5 = ''
+REGEXP_5 = 'A\w+'
 
 # a b c d e f ---> a, b, e, f
 # abcdef      ---> a, b, e, f
 # adf         ---> a, f
 # acf         ---> a, f
-REGEXP_6 = ''
+REGEXP_6 = '[abef]'
 
 # aaa +1.0 bb              ---> +1.0
 # aaa -1.0 bb              ---> -1.0
 # aaa -123.234 bb +111.999 ---> -123.234, +111.999
-REGEXP_7 = ''
+REGEXP_7 = '[0-9+.-]+'
 
 # aaa 18-04-2016 bbb            ---> 18-04-2016
 # aaa 18.04.2016 bbb            ---> 18.04.2016
 # aaa 18-04-ABCD bbb 18.04.2016 ---> 18.04.2016
 # aaa 18/04/ABCD bbb 18/04/2016 ---> 18/04/2016
 # aaa 18/04/ABCD bbb 18/4/2016  ---> 18/4/2016
-REGEXP_8 = ''
+REGEXP_8 = '[0-9]{2}.{1}[0-9]{1,2}.?[0-9]{4}'
