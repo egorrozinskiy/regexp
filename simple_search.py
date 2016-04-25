@@ -18,7 +18,7 @@ REGEXP_2 = 'A+'
 # There is <html> tag ---> <html>
 # color can be used as <font color='red'> ---> <font color='red'>
 # There is x <> 10 and something was wrong with < or > brace. ---> < or >
-REGEXP_3 = '<.>'
+REGEXP_3 = '<.{3,20}>'
 
 # C@n Y0u f1nd CaPoAira? ---> CaPoAira
 # s0 Wh@t i5 CamelStyle? ---> CamelStyle
@@ -44,4 +44,4 @@ REGEXP_7 = '(cat|mouse).+(cat|mouse)'
 # his phone number was 892512366482. ---> 892512366482
 # I called +7 999 648-99-86 ans it was right. ---> +7 999 648-99-86
 # Some 52221 numbers should not hide phone numbers such as 8 915 747-68-99 ---> 8 915 747-68-99
-REGEXP_8 = '[0-9 -+]{12,16}'
+REGEXP_8 = '\+?[78]{1}\s?\d{3}\s?\d{3}-?\d{2}-?\d{2}'  
