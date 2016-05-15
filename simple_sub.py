@@ -41,7 +41,7 @@ REGEXP_5_REPL = '_'
 # a def dd fd  ---> a dd fd
 # x xy xyz yz  ---> x xy yz
 # x xyz xyz yz ---> x yz
-REGEXP_6 = 'abc |def |xyz '
+REGEXP_6 = '\w{3}\s'
 REGEXP_6_REPL = ''
 
 # AabcdZ ---> abcd
@@ -55,12 +55,12 @@ REGEXP_7_REPL = ''
 # a b c  ---> a b c
 # a  b c ---> a b c
 # d    f ---> d f
-REGEXP_8 = ' {2,4}'
+REGEXP_8 = '\s+'
 REGEXP_8_REPL = ' '
 
 # a ab abc abcd ab ---> a ab ab
 # a xyz xyz a      ---> a a
 # d xy xyza a      ---> d xy a
 # a xyzzy b        ---> a xyzzy b
-REGEXP_9 = 'abc |abcd |xyz |xyza '
+REGEXP_9 = '\s([a-z]{3,4}\s)+'
 REGEXP_9_REPL = ''
