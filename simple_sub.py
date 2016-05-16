@@ -62,5 +62,5 @@ REGEXP_8_REPL = ' '
 # a xyz xyz a      ---> a a
 # d xy xyza a      ---> d xy a
 # a xyzzy b        ---> a xyzzy b
-REGEXP_9 = 'xyza |xyz |abc |abcd'
+REGEXP_9 = 'xyza |xyz |abc |abcd '
 REGEXP_9_REPL = ''
